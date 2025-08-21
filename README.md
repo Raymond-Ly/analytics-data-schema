@@ -20,7 +20,7 @@ This document contains the latest version of each analytic Postgres view.
 
 ---
 
-# vw_biap_participant
+# vw_biap_utm
 ## Version 2.0.0
 
 | Column       | Type | Nullable | Confidential | Description                 | Notes |

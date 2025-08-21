@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "view": "vw_biap_participant",
+  "view": "vw_biap_utm",
   "columns": [
     {
       "name": "analytics_id",
