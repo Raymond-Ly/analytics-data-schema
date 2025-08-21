@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "view": "vw_biap_participant",
+  "columns": [
+    {
+      "name": "analytics_id",
+      "type": "uuid",
+      "nullable": false,
+      "description": "Unique analytics identifier",
+      "confidential": false
+    },
+    {
+      "name": "participant_id",
+      "type": "uuid",
+      "nullable": false,
+      "description": "Participant UUID",
+      "confidential": true,
+      "notes": "Not the PK"
+    },
+    {
+      "name": "year_of_birth",
+      "type": "integer",
+      "nullable": true,
+      "description": "Derived from DOB",
+      "confidential": true
+    },
+    {
+      "name": "postcode_district",
+      "type": "text",
+      "nullable": true,
+      "description": "Derived from postcode",
+      "confidential": true
+    },
+    {
+      "name": "postcode_sector",
+      "type": "text",
+      "nullable": true,
+      "description": "Derived from postcode",
+      "confidential": true
+    },
+    {
+      "name": "ethnicity",
+      "type": "text",
+      "nullable": true,
+      "description": "Mapped from ethnicity key",
+      "confidential": true
+    },
+    {
+      "name": "is_deceased",
+      "type": "boolean",
+      "nullable": false,
+      "description": "Defaults to false",
+      "confidential": false
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp",
+      "nullable": false,
+      "description": "Creation timestamp",
+      "confidential": false
+    },
+    {
+      "name": "last_modified",
+      "type": "timestamp",
+      "nullable": false,
+      "description": "Last modified timestamp",
+      "confidential": false
+    },
+    {
+      "name": "new_column",
+      "type": "text",
+      "nullable": true,
+      "description": "A new column for v2",
+      "confidential": false,
+      "notes": "Added in 2.0.0"
+    }
+  ]
+}

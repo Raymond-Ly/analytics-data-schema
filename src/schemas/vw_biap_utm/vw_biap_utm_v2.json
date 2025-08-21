@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "view": "vw_biap_participant",
+  "columns": [
+    {
+      "name": "analytics_id",
+      "type": "uuid",
+      "nullable": false,
+      "description": "Unique analytics identifier",
+      "confidential": false
+    }
+  ]
+}
